@@ -26,8 +26,6 @@ const Card: React.FC<CardProps> = ({
     );
   }
 
-  console.log(data);
-
   return (
     <div className="min-w-100 h-full min-h-60 rounded-lg bg-gray-300 p-2 text-gray-900">
       <div className="flex flex-col items-center space-y-4">
