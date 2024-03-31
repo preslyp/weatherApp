@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+# Welcome to WeatherScan
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WeatherScan is a sleek and efficient weather application built using Vite and Tailwind CSS.
 
-Currently, two official plugins are available:
+[Vite](https://pip.pypa.io/en/stable/): Vite is a next-generation frontend tooling that brings a significantly faster development experience. With Vite, WeatherScan loads instantly, ensuring you get the weather information you need without any delay.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Tailwind CSS](https://pip.pypa.io/en/stable/): Tailwind CSS is a utility-first CSS framework for creating custom designs quickly and easily. It enables us to craft a beautiful and responsive interface with minimal effort, ensuring that WeatherScan not only looks great but also matches your personal style preferences.
 
-## Expanding the ESLint configuration
+#### Requirements
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Primary requirement for running the UI is to have `node` installed ([nodejs.org](https://nodejs.org)). The required version is `>=18`.
 
-- Configure the top-level `parserOptions` property like this:
+In order for the application to work, it needs an API key for [OpenWheather](https://openweathermap.org), from which it gets the data. After cloning the code, create a **.env** file. In it, add:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+ VITE_WEATHER_API_KEY='your key'
+ ```
+
+### Running
+
+To run the UI navigate to **ROOT** and install the latest dependencies (`npm install`). `npm run dev` will serve the UI on http://localhost:5173.
+
+```
+cd weatherApp
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Testing
+
+For the purpose of testing the application, we have added [Cypress](https://www.cypress.io/). To start cypress tests, you first need to run the command:
+
+```
+npm run cypress
+```
+
+### Storybook
+To view the components that the application is built with, we have also added [Storybook](
+https://storybook.js.org/). To start storybook, use the following command:
+
+```
+npm run storybook
+```
