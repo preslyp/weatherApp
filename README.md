@@ -10,7 +10,7 @@ WeatherScan is a sleek and efficient weather application built using Vite and Ta
 
 Primary requirement for running the UI is to have `node` installed ([nodejs.org](https://nodejs.org)). The required version is `>=18`.
 
-In order for the application to work, it needs an API key for [OpenWheather](https://openweathermap.org), from which it gets the data. After cloning the code, create a **.env** file. In it, add:
+In order for the application to work, it needs an API key for [OpenWheather](https://openweathermap.org), from which it gets the data. After cloning the code, create a **.env** file in the root directory. In it, add:
 
 ```
  VITE_WEATHER_API_KEY='your key'
