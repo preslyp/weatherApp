@@ -1,7 +1,7 @@
 import MaxWidthWrapper from "./MaxWidthPageWrapper";
 import pageNotFound from "/images/404.svg";
 
-const PageNotFound = (): JSX.Element => {
+const PageNotFound = ():JSX.Element => {
   return (
     <MaxWidthWrapper>
       <div className="mx-auto flex h-[660px] w-[600px] flex-col items-center gap-8">

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { AppConstants } from "@/constants";
 const { STANDARD, METRIC } = AppConstants.metrics;
 
-const HeroSection = () => {
+const HeroSection = (): JSX.Element => {
   const {
     appState: { unit },
     coords,

@@ -7,7 +7,7 @@ import { AppContext } from "@/context/AppContext";
 import { WeatherData } from "@/types/Homepage";
 import CardDetails from "@/components/CardDetails";
 
-const ForecastDetails = () => {
+const ForecastDetails = (): JSX.Element => {
   const {
     appState: { unit },
     getWeatherDetails,
