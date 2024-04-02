@@ -32,10 +32,10 @@ const Homepage = (): JSX.Element => {
           {Array.from({ length: 4 }, (_, index) => index + 1).map((item) => {
             return (
               <Link
+                key={item}
                 to={`/forecast-details/${renderCityName(currentLocalWeather?.name || "")}/${item}/${coords?.latitude}/${coords?.longitude}`}
               >
                 <Card
-                  key={item}
                   currentLocalWeather={currentLocalWeather}
                   data={forecastWeather?.[item][4]}
                   error={error}
